@@ -1,0 +1,5 @@
+-I./deps/verilator/include
+-I./deps/verilator/include/vltstd/
+-I./obj_dir/
+-I./c_foo/
+-DDUMPFILE="dump.fst"

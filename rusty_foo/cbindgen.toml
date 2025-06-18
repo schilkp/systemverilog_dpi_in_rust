@@ -1,0 +1,20 @@
+language = "C"
+include_guard = "RUSTY_FOO_H"
+pragma_once = false
+cpp_compat = true
+
+# Include the original header that contains svLogicVecVal
+includes = ["svdpi.h"]
+
+[parse]
+parse_deps = true
+include = ["rust_foo"]
+
+# Don't generate definitions for types from bindgen
+[export]
+exclude = ["svLogicVecVal", "svBit", "svLogic"]
+
+# Map Rust types back to their original C names
+[export.rename]
+"bindgen::svLogicVecVal" = "svLogicVecVal"
+

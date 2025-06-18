@@ -1,0 +1,11 @@
+[package]
+name = "rusty_foo"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+crate-type = ["staticlib"]
+
+[build-dependencies]
+bindgen = "0.71.0"
+cbindgen = "0.29.0"
